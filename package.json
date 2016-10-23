@@ -1,0 +1,26 @@
+{
+  "name": "fake-stock-server",
+  "version": "0.0.5",
+  "description": "A fake stock WebSocket server",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crashbell/fake-stock-server.git"
+  },
+  "scripts": {
+    "build": "gulp clean && gulp build",
+    "lint": "gulp lint",
+    "test": "mocha --compilers js:babel-register",
+    "prepublish": "gulp clean && gulp build"
+  },
+  "author": "An Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "bufferutil": "^1.2.1",
+    "utf-8-validate": "^1.2.1",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {
+    "node-bb": "^2.0.6"
+  }
+}
